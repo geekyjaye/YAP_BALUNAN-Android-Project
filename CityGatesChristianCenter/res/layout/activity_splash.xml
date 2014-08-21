@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:text="@string/app_name"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#990697"
+        android:textColor="@color/purple01"
         android:textStyle="bold" />
 
 </LinearLayout>

@@ -7,5 +7,15 @@
     <string name="title_activity_home">Home</string>
     <string name="desc_logo">CityGates Logo</string>
     
+    <string-array name="nav_drawer_items_array">
+        <item >Home</item>
+        <item >About CGCC</item>
+        <item >Get Connected</item>
+        <item >Discipleship</item>
+        <item >Podcasts</item>
+        <item >Events</item>
+        <item >Contact Us</item>
+    </string-array>
+    
 
 </resources>
