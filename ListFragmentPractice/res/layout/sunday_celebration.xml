@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" 
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:text="Psalms 29:2 Ascribe to the LORD the glory due his name; worship the LORD in the splendor of holiness. \n \n Sunday Service Schedule: \n J Centre Mall 9:00 am \n Orchard Hotel 6:00 pm \n \n Come as you are!"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:text="Sunday Celebration"
+        android:textSize="20sp"
+        android:layout_marginBottom="40dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic" />
+
+</RelativeLayout>

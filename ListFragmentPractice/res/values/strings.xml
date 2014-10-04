@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">City Gates</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="heroes">
+        <item>Batman</item>
+        <item>Superman</item>
+        <item>Green Lantern</item>
+        <item>Arrow</item>
+    </string-array>
+        <string name="bringing_a_message_of_hope_to_the_lonely_broken_and_wounded_">Bringing a message of hope to the Lonely, Broken and Wounded.</string>
+
+</resources>
