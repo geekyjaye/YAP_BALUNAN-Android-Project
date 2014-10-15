@@ -19,7 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MyListFragment extends ListFragment implements AdapterView.OnItemClickListener{
-
+	ArrayList<HighLightItem> items;
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class MyListFragment extends ListFragment implements AdapterView.OnItemCl
 	public void onActivityCreated(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onActivityCreated(savedInstanceState);
-        ArrayList<HighLightItem> items = HighLightItem.populateItems();       
+        items = HighLightItem.populateItems();       
         MyAdapter adapter = new MyAdapter(getActivity(), items);
         this.setListAdapter(adapter);
         getListView().setOnItemClickListener(this);
@@ -50,11 +50,13 @@ public class MyListFragment extends ListFragment implements AdapterView.OnItemCl
 			img.setImageResource(items.get(position).imageResourceRef);
 				*/
 		//Log.d("CHECKITEMS", "POS :" + this.getListView().getChildAt(position).findViewById(R.id.textView1). );
-		Log.d("Before", "HERE");	
-		TextView textView = (TextView)this.getListView().getChildAt(position).findViewById(R.id.textView1);
-			Log.d("CHECKTEXT", "Text: " + textView.getText());
+		HighLightItem item=items.get(position);
+			
+		//TextView textView = (TextView)this.getListView().getChildAt(position).findViewById(R.id.textView1);
+		//	Log.d("CHECKTEXT", "Text: " + textView.getText());
 		Intent intent = new Intent(getActivity().getApplicationContext(), FullScreen.class);
-		intent.putExtra("Title", textView.getText());
+		intent.putExtra("Title", item.itemName);
+		Log.d("Before", "HERENEW " + position);
 		startActivity(intent);
     	}
 

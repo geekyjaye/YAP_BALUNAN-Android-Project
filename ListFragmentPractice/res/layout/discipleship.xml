@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/background">
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+                 <ImageView
+                     android:id="@+id/imageView1"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:layout_alignParentTop="true"
+                     android:adjustViewBounds="true"
+                     android:src="@drawable/discipleshipheader" />
+         <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView1"
+        android:background="@drawable/simplerectangle" >
+
+                 <TextView
+                     android:id="@+id/textView2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:layout_below="@+id/textView1"
+                     android:layout_marginTop="15dp"
+                     android:gravity="center"
+                     android:text="The G12 Vision is a Christian evangelism and discipleship strategy to fulfill the Great Commission. It is founded upon the idea that every Christian can mentor and lead twelve people in the Christian faith, following the example of Jesus." />
+
+                 <TextView
+                     android:id="@+id/textView1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentTop="true"
+                     android:layout_centerHorizontal="true"
+                     android:layout_marginTop="15dp"
+                     android:shadowColor="#9933cc"
+                     android:shadowDx="1"
+                     android:shadowDy="1"
+                     android:shadowRadius="1.5"
+                     android:textStyle="italic"
+                     android:text="Discipleship : Equipping Leaders. Empowering Disciples"/>
+
+                 <TextView
+                     android:id="@+id/textView4"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:layout_below="@+id/textView2"
+                     android:layout_marginTop="15dp"
+                     android:gravity="center"
+                     android:text="Christian discipleship is the process by which disciples grow in the Lord Jesus Christ and are equipped by the Holy Spirit, who resides in our hearts, to overcome the pressures and trials of this present life and become more and more Christlike.
+
+Read more: http://www.gotquestions.org/Christian-discipleship.html#ixzz3G0Ke3zup" />
+
+                 <TextView
+                     android:id="@+id/textView5"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:layout_below="@+id/textView4"
+                     android:gravity="center"
+                     android:layout_marginTop="15dp"
+                     android:text="The G12 Vision is a Christian evangelism and discipleship strategy to fulfill the Great Commission. It is founded upon the idea that every Christian can mentor and lead twelve people in the Christian faith, following the example of Jesus." />"/>
+
+                 <TextView
+                     android:id="@+id/textView3"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@+id/textView4"
+                     android:layout_marginTop="15dp"
+                     android:layout_centerHorizontal="true"
+                     android:text="What is G12?" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

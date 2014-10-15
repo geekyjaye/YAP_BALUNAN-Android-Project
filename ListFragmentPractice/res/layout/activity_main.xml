@@ -22,8 +22,8 @@
         android:id="@+id/fragment1"
         android:name="com.example.listfragmentpractice.MyListFragment"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:layout_below="@+id/imageView1"
-        android:layout_centerHorizontal="true" />
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/imageView1" />
 
 </RelativeLayout>

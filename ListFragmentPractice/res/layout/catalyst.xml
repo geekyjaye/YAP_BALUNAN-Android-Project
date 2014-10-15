@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/background">
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+                 <ImageView
+                     android:id="@+id/imageView1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:layout_alignParentTop="true"
+                     android:adjustViewBounds="true"
+                     android:src="@drawable/iamcatalyst" />
+         <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView1"
+        android:background="@drawable/simplerectangle" >
+
+                 <TextView
+                     android:id="@+id/textView2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:layout_below="@+id/textView1"
+                     android:layout_marginTop="15dp"
+                     android:gravity="center"
+                     android:text="A substance, usually used in small amounts relative to the reactants, that modifies and increases the rate of a reactionwithout being consumed in the process." />
+
+                 <TextView
+                     android:id="@+id/textView3"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@+id/textView2"
+                     android:layout_centerHorizontal="true"
+                     android:layout_marginTop="15dp"
+                     android:shadowColor="#9933cc"
+                     android:shadowDx="1"
+                     android:shadowDy="1"
+                     android:shadowRadius="1.5"
+                     android:text="The Catalyst Movement"
+                     android:textStyle="italic" />
+
+                 <TextView
+                     android:id="@+id/textView1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentTop="true"
+                     android:layout_centerHorizontal="true"
+                     android:layout_marginTop="15dp"
+                     android:shadowColor="#9933cc"
+                     android:shadowDx="1"
+                     android:shadowDy="1"
+                     android:shadowRadius="1.5"
+                     android:textStyle="italic"
+                     android:text="What is a Catalyst?"/>
+
+                 <TextView
+                     android:id="@+id/textView4"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:layout_below="@+id/textView3"
+                     android:layout_marginTop="15dp"
+                     android:gravity="center"
+                     android:text="The catalyst movement envisions lives of youth and professionals greatly transformed by God and united to make a difference. They held fun fellowships for youth and professionals. During the fellowship they do activities like games, get to know each and other, praise jam and above all, knowing God deeper." />
+
+                 <TextView
+                     android:id="@+id/textView5"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:layout_below="@+id/textView4"
+                     android:gravity="center"
+                     android:layout_marginTop="15dp"
+                     android:text="Catalyst Youth Fellowship Schedule: \n When: Wednesday - 6:30pm \n Where: Holy Family Village, Banilad \n \n Catalyst Professional Fellowship Schedule: \n When: Friday - 6:30pm \n Where: Holy Family Village, Banilad \n \n Are you a youth or a professional? \n Come, join us and have fun!"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

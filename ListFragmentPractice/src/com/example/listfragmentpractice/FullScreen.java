@@ -1,10 +1,12 @@
 package com.example.listfragmentpractice;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 
-public class FullScreen extends Activity{
+public class FullScreen extends FragmentActivity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		Log.d("CHECK", "Im here oFUllScreen ");
@@ -27,6 +29,23 @@ public class FullScreen extends Activity{
 		case "Sunday Celebration":
 			setContentView(R.layout.sunday_celebration);
 			break;
+		case "Catalyst Movement":
+			setContentView(R.layout.catalyst);
+			break;
+		case "Discipleship":
+			setContentView(R.layout.discipleship);
+			break;			
+		case "Our Cell Groups":
+			setContentView(R.layout.cell_groups);
+			break;			
+		case "Events":
+			setContentView(R.layout.events);
+			break;		
+		case "Gallery":{	
+			//Intent intention = new Intent(this.getActivity(), MonthEventsFragment.class);
+			//startActivity(intention);
+		}
+			break;	
 		default:
 			setContentView(R.layout.testing);
 		}
