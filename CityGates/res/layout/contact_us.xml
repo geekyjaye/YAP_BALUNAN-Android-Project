@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.citygates.MySocialMediaFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fragment1"
+        android:layout_alignRight="@+id/fragment1"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/eventsheader"
+        android:gravity="center"
+        android:shadowColor="#9933cc"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1.5"
+        android:text="Contact Us"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

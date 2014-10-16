@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FullScreen" >
+
+    <com.touchmenotapps.carousel.simple.HorizontalCarouselLayout
+        android:id="@+id/carousel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--
+         <com.touchmenotapps.carousel.simple.VerticalCarouselLayout 
+        android:id="@+id/carousel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    -->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/simplerectangle"
+        android:gravity="center"
+        android:shadowColor="#9933cc"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1.5"
+        android:text="Gallery"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
