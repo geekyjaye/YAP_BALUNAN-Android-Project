@@ -3,29 +3,29 @@
     android:layout_height="fill_parent"
     android:background="@drawable/background" >
 
-    <ScrollView
-        android:id="@+id/scrollView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/cellgroups" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView1"
+        android:background="@drawable/simplerectangle" >
 
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:adjustViewBounds="true"
-                android:src="@drawable/cellgroups" />
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@+id/imageView1"
-                android:background="@drawable/simplerectangle" >
+                android:layout_height="match_parent" >
 
                 <TextView
                     android:id="@+id/textView2"
@@ -72,7 +72,7 @@
                     android:gravity="center"
                     android:text="There are four primary focus points in a Cell meeting:\n 1. Welcome (looking to each other) \n 2. Worship (looking to God)\n 3. Word (looking to the Bible) \n 4. Works (looking to our world)" />
             </RelativeLayout>
-        </RelativeLayout>
-    </ScrollView>
+        </ScrollView>
+    </RelativeLayout>
 
 </RelativeLayout>

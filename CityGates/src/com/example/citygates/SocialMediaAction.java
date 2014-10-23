@@ -1,7 +1,5 @@
 package com.example.citygates;
 
-import com.example.listfragmentpractice.R;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -31,8 +29,10 @@ public class SocialMediaAction extends Activity {
 		case "Holy Family Village, Banilad, Cebu City":
 			openUrl_InBrowser("http://goo.gl/maps/N7o89");
 			break;
-		default:
-			setContentView(R.layout.testing);
+		case "09227305043":
+			call("09227305043");
+			break;
+
 		}
 	}
 
@@ -53,5 +53,11 @@ public class SocialMediaAction extends Activity {
 					Toast.LENGTH_LONG).show();
 		}
 
+	}
+
+	public void call(String phone) {
+		Intent callIntent = new Intent(Intent.ACTION_DIAL);
+		callIntent.setData(Uri.parse("tel:" + phone));
+		startActivity(callIntent);
 	}
 }

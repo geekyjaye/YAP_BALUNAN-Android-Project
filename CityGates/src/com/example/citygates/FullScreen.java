@@ -20,7 +20,8 @@ public class FullScreen extends FragmentActivity {
 	private HorizontalCarouselStyle mStyle;
 	private HorizontalCarouselLayout mCarousel;
 	private CarouselAdapter mAdapter;
-	String[] title = { "Sunday Celebration", "CGCC Leaders", "Catalyst Youth" };
+	String[] title = { "Sunday Celebration", "CGCC Leaders", "Catalyst Youth",
+			"Cell Group" };
 	private ArrayList<Integer> mData = new ArrayList<Integer>(0);
 
 	@Override
@@ -39,7 +40,7 @@ public class FullScreen extends FragmentActivity {
 			setContentView(R.layout.about_us);
 			break;
 		case "Meet Our Pastors":
-			setContentView(R.layout.meet_our_pastors);
+			startActivity(new Intent(FullScreen.this, MeetOurPastors.class));
 			break;
 		case "Contact Us":
 			setContentView(R.layout.contact_us);
@@ -64,10 +65,10 @@ public class FullScreen extends FragmentActivity {
 			// MonthEventsFragment.class);
 			// startActivity(intention);
 			setContentView(R.layout.gallery);
-
 			mData.add(R.drawable.praiseandworship);
 			mData.add(R.drawable.cgccleaders);
 			mData.add(R.drawable.catalystyouth);
+			mData.add(R.drawable.cellgroupic);
 			mAdapter = new CarouselAdapter(this);
 			mAdapter.setData(mData);
 			mCarousel = (HorizontalCarouselLayout) findViewById(R.id.carousel_layout);
@@ -86,8 +87,6 @@ public class FullScreen extends FragmentActivity {
 			});
 		}
 			break;
-		default:
-			setContentView(R.layout.testing);
 		}
 	}
 }

@@ -28,49 +28,121 @@
                 android:textSize="20sp"
                 android:textStyle="italic" />
 
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_weight="1"
-                android:src="@drawable/pastorone" />
-
-            <TextView
-                android:id="@+id/textView2"
+            <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/imageView1"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:layout_weight="3"
-                android:background="@drawable/simplerectangle"
-                android:gravity="center"
-                android:text="Senior Pastor: \n    Pastor Justin Siao \n Address: \n    Holy Family Village, Banilad, Cebu City \n Email Address: \n    justin.siao@gmail.com \n Contact number: \n    09227315043"
-                android:textSize="20sp" />
+                android:background="@drawable/simplerectangle" >
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="25dp"
-                android:layout_weight="1"
-                android:src="@drawable/pastortwo" />
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/pastorone" />
 
-            <TextView
-                android:id="@+id/textView1"
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="Senior Pastor: \n    Pastor Justin Siao \n Address: \n    Holy Family Village, Banilad, Cebu City \n Email Address:" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center"
+                    android:text="Contact number:" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:onClick="sendEmailtoPastorJustin"
+                    android:text="justin.siao@gmail.com"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:onClick="callPastorJustin"
+                    android:text="09227315043"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/imageView2"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:layout_weight="3"
-                android:background="@drawable/simplerectangle"
-                android:gravity="center"
-                android:text="Senior Pastor: \n    Pastor Juby Siao \n Address: \n    Holy Family Village, Banilad, Cebu City \n Email Address: \n    juby.siao@gmail.com \n Contact number: \n    09227315043"
-                android:textSize="20sp" />
+                android:background="@drawable/simplerectangle" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/pastortwo" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="Senior Pastor: \n    Pastor Juby Siao \n Address: \n    Holy Family Village, Banilad, Cebu City \n Email Address:" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center"
+                    android:text="Contact number:" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:onClick="sendEmailtoPastorJuby"
+                    android:text="juby.siao@gmail.com"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:onClick="callPastorJuby"
+                    android:text="09234444620"
+                    android:textSize="13sp" />
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 

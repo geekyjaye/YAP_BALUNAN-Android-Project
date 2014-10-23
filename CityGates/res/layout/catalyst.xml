@@ -3,29 +3,29 @@
     android:layout_height="fill_parent"
     android:background="@drawable/background" >
 
-    <ScrollView
-        android:id="@+id/scrollView1"
+    <ImageView
+        android:id="@+id/imageView1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/iamcatalyst" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView1"
+        android:background="@drawable/simplerectangle" >
 
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:adjustViewBounds="true"
-                android:src="@drawable/iamcatalyst" />
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@+id/imageView1"
-                android:background="@drawable/simplerectangle" >
+                android:layout_height="match_parent" >
 
                 <TextView
                     android:id="@+id/textView2"
@@ -87,7 +87,7 @@
                     android:gravity="center"
                     android:text="Catalyst Youth Fellowship Schedule: \n When: Wednesday - 6:30pm \n Where: Holy Family Village, Banilad \n \n Catalyst Professional Fellowship Schedule: \n When: Friday - 6:30pm \n Where: Holy Family Village, Banilad \n \n Are you a youth or a professional? \n Come, join us and have fun!" />
             </RelativeLayout>
-        </RelativeLayout>
-    </ScrollView>
+        </ScrollView>
+    </RelativeLayout>
 
 </RelativeLayout>
