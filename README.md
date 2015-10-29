@@ -1,4 +1,4 @@
-YAP_BALUNAN-Android-Project Main Branch
+YAP_BALUNAN-Android-Project Test Branch
 ===========================
 
 This rep contains all the documents and source codes of our Android application project.
